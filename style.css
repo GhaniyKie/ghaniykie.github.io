@@ -188,7 +188,6 @@ main {
 
 footer {
     height: 60px;
-    justify-self: center;
     display: flex;
 }
 
@@ -237,15 +236,14 @@ footer p {
     footer {
         clear: both;
         position: relative;
-        height: 150px;
+        height: 70px;
         text-align: center;
     }
 
     footer p {
         font-size: 13px;
         padding-bottom: 10px;
-        bottom: 0;
-        padding-top: 100px ;
+        padding-top: 27px ;
     }
 }
 
