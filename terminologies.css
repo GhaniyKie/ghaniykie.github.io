@@ -1,0 +1,28 @@
+/*  
+Terminologi di Flexbox:
+- main axis: Sumbu utama sebuah container, yang menentukan urutan dari penempatan
+item secara horizontal.
+- main-start | main-end: Mulai dan berakhirnya items yang disimpan dalam container
+- main size: Ukuran (width / height) container yang akan membuat dimensi items nya relatif terhadap main size
+
+Untuk Cross, adalah bagian yang vertical, dengan pengertian yang sama dengan main (Horizontal)
+
+Berikan display: flex pada container.
+flex-direction digunakan untuk arah items
+flex-wrap digunakan untuk memindahkan items yang sudah tidak muat
+justify-content untuk mengatur penjajaran terhadap main (horizontalnya)
+align-items untuk mengatur penjajaran items terhadap cross (verticalnya)
+align-content sama dengan align-items, syarat berfungsinya jika content lebih dari 1 baris
+flex-grow digunakan untuk menyesuaikan ukuran salah satu element flex. Ukuran adalah berapa kali ukuran asli
+order digunakan untuk menentukan urutan konten
+*/
+
+.container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2; /* 2 kali ukuran asli */
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="logo_dr.png" alt="" srcset="">
+            </div>
+            <nav class="navbar">
+                <a href="#">Changelog</a>
+                <a href="#">Developer</a>
+                <a href="#">Bantuan</a>
+                <a href="#" class="login">Login</a>
+            </nav>
+            
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Changelog</a>
+                <a href="#">Developer</a>
+                <a href="#">Bantuan</a>
+                <a href="#" class="login">Login</a>
+            </div>
+            
+            <div class="hamburger-menu" onclick="openNav()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </header>
+        <main>
+            <div class="flex-main">
+                <article class="tagline">
+                    <h1>Pembayaran Bulanan</h1>
+                    <h1><span>Kini Lebih Mudah dan Cepat</span></h1>
+                    <hr>
+                    <p>Memperkenalkan</p>
+                    <h2>Portal Pembayaran Online</h2>
+                    <h3>Pondok Pesantren Daarul Rahman</h3>
+                </article>
+                <article class="image-main">
+                    <img src="lambang_dr_jakarta.png" alt="" srcset="">
+                </article>
+            </div>
+        </main>
+        <footer>
+            <p>&copy 2021 Copyright Pondok Pesantren Daarul Rahman | Made with <i class="bi bi-heart-fill" style="color: red;"></i> by Abdul Hakim Ghaniy</p>
+        </footer>
+    
+    </div>
+
+    <script>
+        /* Open the sidenav */
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        /* Close/hide the sidenav */
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+</html>
