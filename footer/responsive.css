@@ -22,7 +22,7 @@
 
     article .container {
         display: block;
-        margin-top: 6vw;
+        /* margin-top: 6vw; */
     }
 
     .hamburger-menu {
