@@ -1,8 +1,8 @@
 article .container {
     display: flex;
     flex-direction: row;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 
 .tagline {
