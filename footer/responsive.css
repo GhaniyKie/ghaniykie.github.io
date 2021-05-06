@@ -1,0 +1,58 @@
+@media screen and (min-width: 1500px) {
+    .tagline h1 {
+        font-size: 60px;
+    }
+
+    .flex-main {
+        padding: 15% 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .image-main img {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    article .container {
+        display: block;
+        margin-top: 6vw;
+    }
+
+    .hamburger-menu {
+        padding-top: 11px;
+    }
+
+    .hamburger-menu div {
+        display: block;
+    }
+
+    .image-main img, .navbar {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .tagline h1 {
+        font-size: 35px;
+    }
+
+    .tagline p {
+        font-size: 16px;
+    }
+
+    .tagline h2 {
+        font-size: 30px;
+    }
+    
+    .tagline h3 {
+        font-size: 20px;
+    }
+}
