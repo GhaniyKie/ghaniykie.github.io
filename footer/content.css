@@ -48,3 +48,33 @@ article .container {
 .tagline h3 {
     font-size: 25px;
 }
+
+button.start {
+    border-radius: 5px;
+    border: 1px solid forestgreen;
+    height: 50px;
+    width: 165px;
+    display: none;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-top: 40px;
+    color: black;
+    transition-duration: 0.4s;
+    background-color: transparent;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+button.start:hover {
+    background-color: forestgreen;
+    color: white;
+
+}
+
+.start i {
+    font-size: 25px;
+}
+
+.start span, .start i{
+    margin: auto;
+}
