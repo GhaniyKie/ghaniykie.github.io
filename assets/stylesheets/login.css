@@ -35,10 +35,6 @@ header h1 {
     margin-bottom: 10px;
 }
 
-.logo img {
-    width: 250px;
-}
-
 form {
     width: 100%;
     max-width: 400px;
@@ -57,11 +53,14 @@ form {
     border: none;
     border-bottom: 1px solid black;
     background: transparent;
+    font-size: medium;
+}
+
+.input input:focus {
     outline: none;
     -webkit-box-shadow: none;
     box-shadow: none;
-    font-size: medium;
-}
+} 
 
 .field.checkbox {
     display: flex;
