@@ -12,6 +12,10 @@
     .image-main img {
         width: 250px;
     }
+
+    footer .desktop {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 800px) {
