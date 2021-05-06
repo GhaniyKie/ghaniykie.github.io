@@ -48,6 +48,7 @@ header {
 
 main {
     height: 100%;
+    padding-bottom: 2.5rem;    /* Footer height */
 }
 
 .logo {
@@ -129,6 +130,7 @@ main {
 /* ---------- */
 .container {
     width: 80%;
+    min-height: 100%;
     padding: 0 15px;
     margin: 0 auto;
     position: relative;
@@ -136,15 +138,12 @@ main {
 
 .flex-main {
     display: flex;
-    margin-top: 10px;
-    margin-bottom: 10px;
     padding: 6% 0;
-    align-items: center;
-    justify-self: center;
 }
 
 .tagline {
     flex-basis: 55%;
+    margin: auto;
 }
 
 .tagline h1 {
@@ -186,9 +185,17 @@ main {
     font-size: 25px;
 }
 
+main footer {
+    text-align: center;
+}
+
 footer {
-    height: 60px;
+    height: 2.5rem;
     display: flex;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
 }
 
 footer p {
@@ -231,19 +238,6 @@ footer p {
 
     .flex-main {
         display: block;
-    }
-
-    footer {
-        clear: both;
-        position: relative;
-        height: 70px;
-        text-align: center;
-    }
-
-    footer p {
-        font-size: 13px;
-        padding-bottom: 10px;
-        padding-top: 25vw ;
     }
 }
 
