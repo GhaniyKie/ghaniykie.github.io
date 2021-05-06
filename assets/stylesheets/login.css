@@ -1,0 +1,108 @@
+article .container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: none;
+}
+
+article {
+    margin: 0;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: forestgreen;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 9vh;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.logo {
+    margin-bottom: 10px;
+}
+
+.logo img {
+    width: 250px;
+}
+
+form {
+    width: 400px;
+}
+
+.field {
+    /* margin-bottom: 10px; */
+    font-size: 17px;
+    position: relative;
+
+}
+
+.input input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: medium;
+}
+
+.input label {
+    margin-bottom: 10px;
+}
+
+.field.checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.remember-me {
+    display: flex;
+    justify-content: space-between;
+}
+.remember-me input {
+    
+    width: 20px;
+    height: 20px;
+}
+
+.remember-me label {
+    margin: auto;
+}
+
+button.start {
+    display: flex;
+    width: 140px;
+    justify-content: space-between;
+    background-color: rgba(39, 151, 39, 0.7);
+    color: white;
+    margin-top: 20px;
+}
+
+.not-registered {
+    margin-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    article .container {
+        display: flex;
+    }
+}

@@ -1,7 +1,11 @@
 article .container {
     display: flex;
     flex-direction: row;
-    margin-top: 2vh;
+
+}
+
+article {
+    margin-top: 4vh;
     margin-bottom: 2vh;
 }
 
@@ -54,7 +58,6 @@ button.start {
     border: 1px solid forestgreen;
     height: 50px;
     width: 165px;
-    display: none;
     justify-content: space-between;
     font-size: 15px;
     margin-top: 40px;
@@ -68,7 +71,6 @@ button.start {
 button.start:hover {
     background-color: forestgreen;
     color: white;
-
 }
 
 .start i {

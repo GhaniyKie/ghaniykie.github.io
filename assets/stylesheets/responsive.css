@@ -16,6 +16,10 @@
     footer .desktop {
         display: none;
     }
+
+    footer .mobile {
+        display: inherit;
+    }
     
     footer p {
         font-size: 11px;
@@ -34,7 +38,6 @@
 
     article .container {
         display: block;
-        /* margin-top: 6vw; */
     }
 
     .hamburger-menu {
