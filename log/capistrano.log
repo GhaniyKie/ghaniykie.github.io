@@ -1,0 +1,293 @@
+# Logfile created on 2021-06-06 15:59:04 +0700 by logger.rb/v1.4.3
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-06 15:59:04 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [ca090629] Running /usr/bin/env mkdir -p /tmp as kaanoy@34.101.252.168
+ DEBUG [ca090629] Command: /usr/bin/env mkdir -p /tmp
+  INFO [ca090629] Finished in 2.890 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-f07547327906f97840d4.sh 0.0%
+  INFO Uploading /tmp/git-ssh-f07547327906f97840d4.sh 100.0%
+  INFO [9146381e] Running /usr/bin/env chmod 700 /tmp/git-ssh-f07547327906f97840d4.sh as kaanoy@34.101.252.168
+ DEBUG [9146381e] Command: /usr/bin/env chmod 700 /tmp/git-ssh-f07547327906f97840d4.sh
+  INFO [9146381e] Finished in 0.089 seconds with exit status 0 (successful).
+  INFO [eaa24185] Running /usr/bin/env git ls-remote git@github.com:GhaniyKie/ghaniykie.github.io.git HEAD as kaanoy@34.101.252.168
+ DEBUG [eaa24185] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f07547327906f97840d4.sh" ; /usr/bin/env git ls-remote git@github.com:GhaniyKie/ghaniykie.github.io.git HEAD )
+ DEBUG [eaa24185] 	Warning: Permanently added the RSA host key for IP address '13.229.188.59' to the list of known hosts.
+ DEBUG [eaa24185] 	52a377c86cf2c78c073cfcf6d8e9a2d8b5f1d288	HEAD
+  INFO [eaa24185] Finished in 4.439 seconds with exit status 0 (successful).
+  INFO [ce325a15] Running /usr/bin/env mkdir -p /home/kaanoy/integrated-mockup/shared /home/kaanoy/integrated-mockup/releases as kaanoy@34.101.252.168
+ DEBUG [ce325a15] Command: /usr/bin/env mkdir -p /home/kaanoy/integrated-mockup/shared /home/kaanoy/integrated-mockup/releases
+  INFO [ce325a15] Finished in 0.100 seconds with exit status 0 (successful).
+ DEBUG [b0d6b9b6] Running [ -f /home/kaanoy/integrated-mockup/current/REVISION ] as kaanoy@34.101.252.168
+ DEBUG [b0d6b9b6] Command: [ -f /home/kaanoy/integrated-mockup/current/REVISION ]
+ DEBUG [b0d6b9b6] Finished in 0.181 seconds with exit status 1 (failed).
+ DEBUG [7f9d805c] Running [ -f /home/kaanoy/integrated-mockup/repo/HEAD ] as kaanoy@34.101.252.168
+ DEBUG [7f9d805c] Command: [ -f /home/kaanoy/integrated-mockup/repo/HEAD ]
+ DEBUG [7f9d805c] Finished in 0.088 seconds with exit status 1 (failed).
+ DEBUG [1d10c8d0] Running if test ! -d /home/kaanoy/integrated-mockup; then echo "Directory does not exist '/home/kaanoy/integrated-mockup'" 1>&2; false; fi as kaanoy@34.101.252.168
+ DEBUG [1d10c8d0] Command: if test ! -d /home/kaanoy/integrated-mockup; then echo "Directory does not exist '/home/kaanoy/integrated-mockup'" 1>&2; false; fi
+ DEBUG [1d10c8d0] Finished in 0.165 seconds with exit status 0 (successful).
+  INFO [b3a20c21] Running /usr/bin/env git clone --mirror git@github.com:GhaniyKie/ghaniykie.github.io.git /home/kaanoy/integrated-mockup/repo as kaanoy@34.101.252.168
+ DEBUG [b3a20c21] Command: cd /home/kaanoy/integrated-mockup && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f07547327906f97840d4.sh" ; /usr/bin/env git clone --mirror git@github.com:GhaniyKie/ghaniykie.github.io.git /home/kaanoy/integrated-mockup/repo )
+ DEBUG [b3a20c21] 	Cloning into bare repository '/home/kaanoy/integrated-mockup/repo'...
+  INFO [b3a20c21] Finished in 4.375 seconds with exit status 0 (successful).
+ DEBUG [f42965ae] Running if test ! -d /home/kaanoy/integrated-mockup/repo; then echo "Directory does not exist '/home/kaanoy/integrated-mockup/repo'" 1>&2; false; fi as kaanoy@34.101.252.168
+ DEBUG [f42965ae] Command: if test ! -d /home/kaanoy/integrated-mockup/repo; then echo "Directory does not exist '/home/kaanoy/integrated-mockup/repo'" 1>&2; false; fi
+ DEBUG [f42965ae] Finished in 0.118 seconds with exit status 0 (successful).
+  INFO [712cb1ff] Running /usr/bin/env git remote set-url origin git@github.com:GhaniyKie/ghaniykie.github.io.git as kaanoy@34.101.252.168
+ DEBUG [712cb1ff] Command: cd /home/kaanoy/integrated-mockup/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f07547327906f97840d4.sh" ; /usr/bin/env git remote set-url origin git@github.com:GhaniyKie/ghaniykie.github.io.git )
+  INFO [712cb1ff] Finished in 0.179 seconds with exit status 0 (successful).
+  INFO [707d2cd2] Running /usr/bin/env git remote update --prune as kaanoy@34.101.252.168
+ DEBUG [707d2cd2] Command: cd /home/kaanoy/integrated-mockup/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f07547327906f97840d4.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [707d2cd2] 	Fetching origin
+  INFO [707d2cd2] Finished in 3.387 seconds with exit status 0 (successful).
+ DEBUG [cbe18f4e] Running if test ! -d /home/kaanoy/integrated-mockup/repo; then echo "Directory does not exist '/home/kaanoy/integrated-mockup/repo'" 1>&2; false; fi as kaanoy@34.101.252.168
+ DEBUG [cbe18f4e] Command: if test ! -d /home/kaanoy/integrated-mockup/repo; then echo "Directory does not exist '/home/kaanoy/integrated-mockup/repo'" 1>&2; false; fi
+ DEBUG [cbe18f4e] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO [47096051] Running /usr/bin/env mkdir -p /home/kaanoy/integrated-mockup/releases/20210606085912 as kaanoy@34.101.252.168
+ DEBUG [47096051] Command: cd /home/kaanoy/integrated-mockup/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f07547327906f97840d4.sh" ; /usr/bin/env mkdir -p /home/kaanoy/integrated-mockup/releases/20210606085912 )
+  INFO [47096051] Finished in 0.185 seconds with exit status 0 (successful).
+  INFO [5eccf864] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/kaanoy/integrated-mockup/releases/20210606085912 as kaanoy@34.101.252.168
+ DEBUG [5eccf864] Command: cd /home/kaanoy/integrated-mockup/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f07547327906f97840d4.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/kaanoy/integrated-mockup/releases/20210606085912 )
+ DEBUG [5eccf864] 	fatal: not a valid object name: master
+ DEBUG [5eccf864] 	tar: This does not look like a tar archive
+ DEBUG [5eccf864] 	tar: 
+ DEBUG [5eccf864] 	Exiting with failure status due to previous errors
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-06 16:00:44 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [b96dda88] Running /usr/bin/env mkdir -p /tmp as kaanoy@34.101.252.168
+ DEBUG [b96dda88] Command: /usr/bin/env mkdir -p /tmp
+  INFO [b96dda88] Finished in 0.982 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-78c675aa2c4f233772ef.sh 0.0%
+  INFO Uploading /tmp/git-ssh-78c675aa2c4f233772ef.sh 100.0%
+  INFO [e62e4032] Running /usr/bin/env chmod 700 /tmp/git-ssh-78c675aa2c4f233772ef.sh as kaanoy@34.101.252.168
+ DEBUG [e62e4032] Command: /usr/bin/env chmod 700 /tmp/git-ssh-78c675aa2c4f233772ef.sh
+  INFO [e62e4032] Finished in 0.200 seconds with exit status 0 (successful).
+  INFO [1062691c] Running /usr/bin/env git ls-remote git@github.com:GhaniyKie/ghaniykie.github.io.git HEAD as kaanoy@34.101.252.168
+ DEBUG [1062691c] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-78c675aa2c4f233772ef.sh" ; /usr/bin/env git ls-remote git@github.com:GhaniyKie/ghaniykie.github.io.git HEAD )
+ DEBUG [1062691c] 	52a377c86cf2c78c073cfcf6d8e9a2d8b5f1d288	HEAD
+  INFO [1062691c] Finished in 2.825 seconds with exit status 0 (successful).
+  INFO [6777483c] Running /usr/bin/env mkdir -p /home/kaanoy/integrated-mockup/shared /home/kaanoy/integrated-mockup/releases as kaanoy@34.101.252.168
+ DEBUG [6777483c] Command: /usr/bin/env mkdir -p /home/kaanoy/integrated-mockup/shared /home/kaanoy/integrated-mockup/releases
+  INFO [6777483c] Finished in 0.108 seconds with exit status 0 (successful).
+ DEBUG [23034499] Running [ -f /home/kaanoy/integrated-mockup/current/REVISION ] as kaanoy@34.101.252.168
+ DEBUG [23034499] Command: [ -f /home/kaanoy/integrated-mockup/current/REVISION ]
+ DEBUG [23034499] Finished in 0.269 seconds with exit status 1 (failed).
+ DEBUG [06baf8f9] Running [ -f /home/kaanoy/integrated-mockup/repo/HEAD ] as kaanoy@34.101.252.168
+ DEBUG [06baf8f9] Command: [ -f /home/kaanoy/integrated-mockup/repo/HEAD ]
+ DEBUG [06baf8f9] Finished in 0.173 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/kaanoy/integrated-mockup/repo
+ DEBUG [924da609] Running if test ! -d /home/kaanoy/integrated-mockup/repo; then echo "Directory does not exist '/home/kaanoy/integrated-mockup/repo'" 1>&2; false; fi as kaanoy@34.101.252.168
+ DEBUG [924da609] Command: if test ! -d /home/kaanoy/integrated-mockup/repo; then echo "Directory does not exist '/home/kaanoy/integrated-mockup/repo'" 1>&2; false; fi
+ DEBUG [924da609] Finished in 0.194 seconds with exit status 0 (successful).
+  INFO [271653d0] Running /usr/bin/env git remote set-url origin git@github.com:GhaniyKie/ghaniykie.github.io.git as kaanoy@34.101.252.168
+ DEBUG [271653d0] Command: cd /home/kaanoy/integrated-mockup/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-78c675aa2c4f233772ef.sh" ; /usr/bin/env git remote set-url origin git@github.com:GhaniyKie/ghaniykie.github.io.git )
+  INFO [271653d0] Finished in 0.124 seconds with exit status 0 (successful).
+  INFO [8a1dbd03] Running /usr/bin/env git remote update --prune as kaanoy@34.101.252.168
+ DEBUG [8a1dbd03] Command: cd /home/kaanoy/integrated-mockup/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-78c675aa2c4f233772ef.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [8a1dbd03] 	Fetching origin
+  INFO [8a1dbd03] Finished in 2.892 seconds with exit status 0 (successful).
+ DEBUG [53861eef] Running if test ! -d /home/kaanoy/integrated-mockup/repo; then echo "Directory does not exist '/home/kaanoy/integrated-mockup/repo'" 1>&2; false; fi as kaanoy@34.101.252.168
+ DEBUG [53861eef] Command: if test ! -d /home/kaanoy/integrated-mockup/repo; then echo "Directory does not exist '/home/kaanoy/integrated-mockup/repo'" 1>&2; false; fi
+ DEBUG [53861eef] Finished in 0.117 seconds with exit status 0 (successful).
+  INFO [71118775] Running /usr/bin/env mkdir -p /home/kaanoy/integrated-mockup/releases/20210606090049 as kaanoy@34.101.252.168
+ DEBUG [71118775] Command: cd /home/kaanoy/integrated-mockup/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-78c675aa2c4f233772ef.sh" ; /usr/bin/env mkdir -p /home/kaanoy/integrated-mockup/releases/20210606090049 )
+  INFO [71118775] Finished in 0.174 seconds with exit status 0 (successful).
+  INFO [103a0988] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/kaanoy/integrated-mockup/releases/20210606090049 as kaanoy@34.101.252.168
+ DEBUG [103a0988] Command: cd /home/kaanoy/integrated-mockup/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-78c675aa2c4f233772ef.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/kaanoy/integrated-mockup/releases/20210606090049 )
+  INFO [103a0988] Finished in 0.104 seconds with exit status 0 (successful).
+ DEBUG [b6deb32e] Running if test ! -d /home/kaanoy/integrated-mockup/repo; then echo "Directory does not exist '/home/kaanoy/integrated-mockup/repo'" 1>&2; false; fi as kaanoy@34.101.252.168
+ DEBUG [b6deb32e] Command: if test ! -d /home/kaanoy/integrated-mockup/repo; then echo "Directory does not exist '/home/kaanoy/integrated-mockup/repo'" 1>&2; false; fi
+ DEBUG [b6deb32e] Finished in 0.242 seconds with exit status 0 (successful).
+ DEBUG [17202215] Running /usr/bin/env git rev-list --max-count=1 main as kaanoy@34.101.252.168
+ DEBUG [17202215] Command: cd /home/kaanoy/integrated-mockup/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-78c675aa2c4f233772ef.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [17202215] 	52a377c86cf2c78c073cfcf6d8e9a2d8b5f1d288
+ DEBUG [17202215] Finished in 0.172 seconds with exit status 0 (successful).
+ DEBUG [853da7b8] Running if test ! -d /home/kaanoy/integrated-mockup/releases/20210606090049; then echo "Directory does not exist '/home/kaanoy/integrated-mockup/releases/20210606090049'" 1>&2; false; fi as kaanoy@34.101.252.168
+ DEBUG [853da7b8] Command: if test ! -d /home/kaanoy/integrated-mockup/releases/20210606090049; then echo "Directory does not exist '/home/kaanoy/integrated-mockup/releases/20210606090049'" 1>&2; false; fi
+ DEBUG [853da7b8] Finished in 0.310 seconds with exit status 0 (successful).
+  INFO [f1262639] Running /usr/bin/env echo "52a377c86cf2c78c073cfcf6d8e9a2d8b5f1d288" > REVISION as kaanoy@34.101.252.168
+ DEBUG [f1262639] Command: cd /home/kaanoy/integrated-mockup/releases/20210606090049 && /usr/bin/env echo "52a377c86cf2c78c073cfcf6d8e9a2d8b5f1d288" > REVISION
+  INFO [f1262639] Finished in 0.252 seconds with exit status 0 (successful).
+  INFO [4bb31f7a] Running /usr/bin/env ln -s /home/kaanoy/integrated-mockup/releases/20210606090049 /home/kaanoy/integrated-mockup/releases/current as kaanoy@34.101.252.168
+ DEBUG [4bb31f7a] Command: /usr/bin/env ln -s /home/kaanoy/integrated-mockup/releases/20210606090049 /home/kaanoy/integrated-mockup/releases/current
+  INFO [4bb31f7a] Finished in 0.198 seconds with exit status 0 (successful).
+  INFO [f7fd89ba] Running /usr/bin/env mv /home/kaanoy/integrated-mockup/releases/current /home/kaanoy/integrated-mockup as kaanoy@34.101.252.168
+ DEBUG [f7fd89ba] Command: /usr/bin/env mv /home/kaanoy/integrated-mockup/releases/current /home/kaanoy/integrated-mockup
+  INFO [f7fd89ba] Finished in 0.114 seconds with exit status 0 (successful).
+ DEBUG [9727c6ed] Running /usr/bin/env ls -x /home/kaanoy/integrated-mockup/releases as kaanoy@34.101.252.168
+ DEBUG [9727c6ed] Command: /usr/bin/env ls -x /home/kaanoy/integrated-mockup/releases
+ DEBUG [9727c6ed] 	20210606085912	20210606090049
+ DEBUG [9727c6ed] Finished in 0.184 seconds with exit status 0 (successful).
+  INFO Keeping 1 of 2 deployed releases on 34.101.252.168
+ DEBUG [04a17c05] Running [ -d /home/kaanoy/integrated-mockup/current ] as kaanoy@34.101.252.168
+ DEBUG [04a17c05] Command: [ -d /home/kaanoy/integrated-mockup/current ]
+ DEBUG [04a17c05] Finished in 0.108 seconds with exit status 0 (successful).
+ DEBUG [1663f699] Running /usr/bin/env readlink /home/kaanoy/integrated-mockup/current as kaanoy@34.101.252.168
+ DEBUG [1663f699] Command: /usr/bin/env readlink /home/kaanoy/integrated-mockup/current
+ DEBUG [1663f699] 	/home/kaanoy/integrated-mockup/releases/20210606090049
+ DEBUG [1663f699] Finished in 0.180 seconds with exit status 0 (successful).
+  INFO [14b6ad5e] Running /usr/bin/env rm -rf /home/kaanoy/integrated-mockup/releases/20210606085912 as kaanoy@34.101.252.168
+ DEBUG [14b6ad5e] Command: /usr/bin/env rm -rf /home/kaanoy/integrated-mockup/releases/20210606085912
+  INFO [14b6ad5e] Finished in 0.104 seconds with exit status 0 (successful).
+ DEBUG [dc8848f7] Running if test ! -d /home/kaanoy/integrated-mockup/releases; then echo "Directory does not exist '/home/kaanoy/integrated-mockup/releases'" 1>&2; false; fi as kaanoy@34.101.252.168
+ DEBUG [dc8848f7] Command: if test ! -d /home/kaanoy/integrated-mockup/releases; then echo "Directory does not exist '/home/kaanoy/integrated-mockup/releases'" 1>&2; false; fi
+ DEBUG [dc8848f7] Finished in 0.187 seconds with exit status 0 (successful).
+  INFO [72951bcf] Running /usr/bin/env echo "Branch main (at 52a377c86cf2c78c073cfcf6d8e9a2d8b5f1d288) deployed as release 20210606090049 by kaanoy" >> /home/kaanoy/integrated-mockup/revisions.log as kaanoy@34.101.252.168
+ DEBUG [72951bcf] Command: cd /home/kaanoy/integrated-mockup/releases && /usr/bin/env echo "Branch main (at 52a377c86cf2c78c073cfcf6d8e9a2d8b5f1d288) deployed as release 20210606090049 by kaanoy" >> /home/kaanoy/integrated-mockup/revisions.log
+  INFO [72951bcf] Finished in 0.102 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-06 17:45:37 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [7471a3e0] Running /usr/bin/env mkdir -p /tmp as kaanoy@34.101.252.168
+ DEBUG [7471a3e0] Command: /usr/bin/env mkdir -p /tmp
+  INFO [7471a3e0] Finished in 0.991 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-99af6e5b9a5ef7e6ead4.sh 0.0%
+  INFO Uploading /tmp/git-ssh-99af6e5b9a5ef7e6ead4.sh 100.0%
+  INFO [366d8f08] Running /usr/bin/env chmod 700 /tmp/git-ssh-99af6e5b9a5ef7e6ead4.sh as kaanoy@34.101.252.168
+ DEBUG [366d8f08] Command: /usr/bin/env chmod 700 /tmp/git-ssh-99af6e5b9a5ef7e6ead4.sh
+  INFO [366d8f08] Finished in 0.150 seconds with exit status 0 (successful).
+  INFO [62e8e337] Running /usr/bin/env git ls-remote git@github.com:GhaniyKie/ghaniykie.github.io.git HEAD as kaanoy@34.101.252.168
+ DEBUG [62e8e337] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-99af6e5b9a5ef7e6ead4.sh" ; /usr/bin/env git ls-remote git@github.com:GhaniyKie/ghaniykie.github.io.git HEAD )
+ DEBUG [62e8e337] 	52a377c86cf2c78c073cfcf6d8e9a2d8b5f1d288	HEAD
+  INFO [62e8e337] Finished in 3.025 seconds with exit status 0 (successful).
+  INFO [4e0083a9] Running /usr/bin/env mkdir -p /home/kaanoy/integrated-mockup/shared /home/kaanoy/integrated-mockup/releases as kaanoy@34.101.252.168
+ DEBUG [4e0083a9] Command: /usr/bin/env mkdir -p /home/kaanoy/integrated-mockup/shared /home/kaanoy/integrated-mockup/releases
+  INFO [4e0083a9] Finished in 0.113 seconds with exit status 0 (successful).
+ DEBUG [51fb129e] Running [ -f /home/kaanoy/integrated-mockup/current/REVISION ] as kaanoy@34.101.252.168
+ DEBUG [51fb129e] Command: [ -f /home/kaanoy/integrated-mockup/current/REVISION ]
+ DEBUG [51fb129e] Finished in 0.182 seconds with exit status 0 (successful).
+ DEBUG [af3bd2c9] Running /usr/bin/env cat /home/kaanoy/integrated-mockup/current/REVISION 2>/dev/null as kaanoy@34.101.252.168
+ DEBUG [af3bd2c9] Command: /usr/bin/env cat /home/kaanoy/integrated-mockup/current/REVISION 2>/dev/null
+ DEBUG [af3bd2c9] 	52a377c86cf2c78c073cfcf6d8e9a2d8b5f1d288
+ DEBUG [af3bd2c9] Finished in 0.130 seconds with exit status 0 (successful).
+ DEBUG [d255b6c2] Running [ -f /home/kaanoy/integrated-mockup/repo/HEAD ] as kaanoy@34.101.252.168
+ DEBUG [d255b6c2] Command: [ -f /home/kaanoy/integrated-mockup/repo/HEAD ]
+ DEBUG [d255b6c2] Finished in 0.169 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/kaanoy/integrated-mockup/repo
+ DEBUG [de374a68] Running if test ! -d /home/kaanoy/integrated-mockup/repo; then echo "Directory does not exist '/home/kaanoy/integrated-mockup/repo'" 1>&2; false; fi as kaanoy@34.101.252.168
+ DEBUG [de374a68] Command: if test ! -d /home/kaanoy/integrated-mockup/repo; then echo "Directory does not exist '/home/kaanoy/integrated-mockup/repo'" 1>&2; false; fi
+ DEBUG [de374a68] Finished in 0.117 seconds with exit status 0 (successful).
+  INFO [2f83362c] Running /usr/bin/env git remote set-url origin git@github.com:GhaniyKie/ghaniykie.github.io.git as kaanoy@34.101.252.168
+ DEBUG [2f83362c] Command: cd /home/kaanoy/integrated-mockup/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-99af6e5b9a5ef7e6ead4.sh" ; /usr/bin/env git remote set-url origin git@github.com:GhaniyKie/ghaniykie.github.io.git )
+ DEBUG [2f83362c] 	error: could not lock config file config: Permission denied
+fatal: could not set 'remote.origin.url' to 'git@github.com:GhaniyKie/ghaniykie.github.io.git'
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-06 17:46:55 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [4d6f028f] Running /usr/bin/env mkdir -p /tmp as kaanoy@34.101.252.168
+ DEBUG [4d6f028f] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-06 17:48:03 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [b2ed2177] Running /usr/bin/env mkdir -p /tmp as kaanoy@34.101.252.168
+ DEBUG [b2ed2177] Command: /usr/bin/env mkdir -p /tmp
+  INFO [b2ed2177] Finished in 1.104 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-0ed24cdfec07d70af93c.sh 0.0%
+  INFO Uploading /tmp/git-ssh-0ed24cdfec07d70af93c.sh 100.0%
+  INFO [616f050f] Running /usr/bin/env chmod 700 /tmp/git-ssh-0ed24cdfec07d70af93c.sh as kaanoy@34.101.252.168
+ DEBUG [616f050f] Command: /usr/bin/env chmod 700 /tmp/git-ssh-0ed24cdfec07d70af93c.sh
+  INFO [616f050f] Finished in 0.170 seconds with exit status 0 (successful).
+  INFO [e2e5f369] Running /usr/bin/env git ls-remote git@github.com:GhaniyKie/ghaniykie.github.io.git HEAD as kaanoy@34.101.252.168
+ DEBUG [e2e5f369] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-0ed24cdfec07d70af93c.sh" ; /usr/bin/env git ls-remote git@github.com:GhaniyKie/ghaniykie.github.io.git HEAD )
+ DEBUG [e2e5f369] 	52a377c86cf2c78c073cfcf6d8e9a2d8b5f1d288	HEAD
+  INFO [e2e5f369] Finished in 2.776 seconds with exit status 0 (successful).
+  INFO [7c5a23fa] Running /usr/bin/env mkdir -p /home/kaanoy/integrated-mockup/shared /home/kaanoy/integrated-mockup/releases as kaanoy@34.101.252.168
+ DEBUG [7c5a23fa] Command: /usr/bin/env mkdir -p /home/kaanoy/integrated-mockup/shared /home/kaanoy/integrated-mockup/releases
+  INFO [7c5a23fa] Finished in 0.111 seconds with exit status 0 (successful).
+ DEBUG [5816a9a1] Running [ -f /home/kaanoy/integrated-mockup/current/REVISION ] as kaanoy@34.101.252.168
+ DEBUG [5816a9a1] Command: [ -f /home/kaanoy/integrated-mockup/current/REVISION ]
+ DEBUG [5816a9a1] Finished in 0.166 seconds with exit status 0 (successful).
+ DEBUG [447ad63a] Running /usr/bin/env cat /home/kaanoy/integrated-mockup/current/REVISION 2>/dev/null as kaanoy@34.101.252.168
+ DEBUG [447ad63a] Command: /usr/bin/env cat /home/kaanoy/integrated-mockup/current/REVISION 2>/dev/null
+ DEBUG [447ad63a] 	52a377c86cf2c78c073cfcf6d8e9a2d8b5f1d288
+ DEBUG [447ad63a] Finished in 0.098 seconds with exit status 0 (successful).
+ DEBUG [2bc41613] Running [ -f /home/kaanoy/integrated-mockup/repo/HEAD ] as kaanoy@34.101.252.168
+ DEBUG [2bc41613] Command: [ -f /home/kaanoy/integrated-mockup/repo/HEAD ]
+ DEBUG [2bc41613] Finished in 0.168 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/kaanoy/integrated-mockup/repo
+ DEBUG [8a4273e4] Running if test ! -d /home/kaanoy/integrated-mockup/repo; then echo "Directory does not exist '/home/kaanoy/integrated-mockup/repo'" 1>&2; false; fi as kaanoy@34.101.252.168
+ DEBUG [8a4273e4] Command: if test ! -d /home/kaanoy/integrated-mockup/repo; then echo "Directory does not exist '/home/kaanoy/integrated-mockup/repo'" 1>&2; false; fi
+ DEBUG [8a4273e4] Finished in 0.108 seconds with exit status 0 (successful).
+  INFO [c0211f8f] Running /usr/bin/env git remote set-url origin git@github.com:GhaniyKie/ghaniykie.github.io.git as kaanoy@34.101.252.168
+ DEBUG [c0211f8f] Command: cd /home/kaanoy/integrated-mockup/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-0ed24cdfec07d70af93c.sh" ; /usr/bin/env git remote set-url origin git@github.com:GhaniyKie/ghaniykie.github.io.git )
+ DEBUG [c0211f8f] 	error: could not lock config file config: Permission denied
+fatal: could not set 'remote.origin.url' to 'git@github.com:GhaniyKie/ghaniykie.github.io.git'
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-06 17:48:56 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [586092d8] Running /usr/bin/env mkdir -p /tmp as kaanoy@34.101.252.168
+ DEBUG [586092d8] Command: /usr/bin/env mkdir -p /tmp
+  INFO [586092d8] Finished in 2.012 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-b79ad764345d04090744.sh 0.0%
+  INFO Uploading /tmp/git-ssh-b79ad764345d04090744.sh 100.0%
+  INFO [e52dffd7] Running /usr/bin/env chmod 700 /tmp/git-ssh-b79ad764345d04090744.sh as kaanoy@34.101.252.168
+ DEBUG [e52dffd7] Command: /usr/bin/env chmod 700 /tmp/git-ssh-b79ad764345d04090744.sh
+  INFO [e52dffd7] Finished in 0.139 seconds with exit status 0 (successful).
+  INFO [64028ed5] Running /usr/bin/env git ls-remote git@github.com:GhaniyKie/ghaniykie.github.io.git HEAD as kaanoy@34.101.252.168
+ DEBUG [64028ed5] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-b79ad764345d04090744.sh" ; /usr/bin/env git ls-remote git@github.com:GhaniyKie/ghaniykie.github.io.git HEAD )
+ DEBUG [64028ed5] 	52a377c86cf2c78c073cfcf6d8e9a2d8b5f1d288	HEAD
+  INFO [64028ed5] Finished in 2.765 seconds with exit status 0 (successful).
+  INFO [ef2b2bba] Running /usr/bin/env mkdir -p /home/kaanoy/integrated-mockup/shared /home/kaanoy/integrated-mockup/releases as kaanoy@34.101.252.168
+ DEBUG [ef2b2bba] Command: /usr/bin/env mkdir -p /home/kaanoy/integrated-mockup/shared /home/kaanoy/integrated-mockup/releases
+  INFO [ef2b2bba] Finished in 0.105 seconds with exit status 0 (successful).
+ DEBUG [6320e73c] Running [ -f /home/kaanoy/integrated-mockup/current/REVISION ] as kaanoy@34.101.252.168
+ DEBUG [6320e73c] Command: [ -f /home/kaanoy/integrated-mockup/current/REVISION ]
+ DEBUG [6320e73c] Finished in 0.179 seconds with exit status 0 (successful).
+ DEBUG [5c600e92] Running /usr/bin/env cat /home/kaanoy/integrated-mockup/current/REVISION 2>/dev/null as kaanoy@34.101.252.168
+ DEBUG [5c600e92] Command: /usr/bin/env cat /home/kaanoy/integrated-mockup/current/REVISION 2>/dev/null
+ DEBUG [5c600e92] 	52a377c86cf2c78c073cfcf6d8e9a2d8b5f1d288
+ DEBUG [5c600e92] Finished in 0.136 seconds with exit status 0 (successful).
+ DEBUG [11134959] Running [ -f /home/kaanoy/integrated-mockup/repo/HEAD ] as kaanoy@34.101.252.168
+ DEBUG [11134959] Command: [ -f /home/kaanoy/integrated-mockup/repo/HEAD ]
+ DEBUG [11134959] Finished in 0.183 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/kaanoy/integrated-mockup/repo
+ DEBUG [110a74ab] Running if test ! -d /home/kaanoy/integrated-mockup/repo; then echo "Directory does not exist '/home/kaanoy/integrated-mockup/repo'" 1>&2; false; fi as kaanoy@34.101.252.168
+ DEBUG [110a74ab] Command: if test ! -d /home/kaanoy/integrated-mockup/repo; then echo "Directory does not exist '/home/kaanoy/integrated-mockup/repo'" 1>&2; false; fi
+ DEBUG [110a74ab] Finished in 0.094 seconds with exit status 0 (successful).
+  INFO [9a8b2bcb] Running /usr/bin/env git remote set-url origin git@github.com:GhaniyKie/ghaniykie.github.io.git as kaanoy@34.101.252.168
+ DEBUG [9a8b2bcb] Command: cd /home/kaanoy/integrated-mockup/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-b79ad764345d04090744.sh" ; /usr/bin/env git remote set-url origin git@github.com:GhaniyKie/ghaniykie.github.io.git )
+ DEBUG [9a8b2bcb] 	error: could not lock config file config: Permission denied
+fatal: could not set 'remote.origin.url' to 'git@github.com:GhaniyKie/ghaniykie.github.io.git'
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-06 17:49:29 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [e7d2cfc0] Running /usr/bin/env mkdir -p /tmp as kaanoy@34.101.252.168
+ DEBUG [e7d2cfc0] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-06-06 17:49:48 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [0a2ac722] Running /usr/bin/env mkdir -p /tmp as kaanoy@34.101.252.168
+ DEBUG [0a2ac722] Command: /usr/bin/env mkdir -p /tmp
+  INFO [0a2ac722] Finished in 0.920 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-d5e32ff6dcfa6f41aba0.sh 0.0%
+  INFO Uploading /tmp/git-ssh-d5e32ff6dcfa6f41aba0.sh 100.0%
+  INFO [604c7ed5] Running /usr/bin/env chmod 700 /tmp/git-ssh-d5e32ff6dcfa6f41aba0.sh as kaanoy@34.101.252.168
+ DEBUG [604c7ed5] Command: /usr/bin/env chmod 700 /tmp/git-ssh-d5e32ff6dcfa6f41aba0.sh
+  INFO [604c7ed5] Finished in 0.151 seconds with exit status 0 (successful).
+  INFO [65f40819] Running /usr/bin/env git ls-remote git@github.com:GhaniyKie/ghaniykie.github.io.git HEAD as kaanoy@34.101.252.168
+ DEBUG [65f40819] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-d5e32ff6dcfa6f41aba0.sh" ; /usr/bin/env git ls-remote git@github.com:GhaniyKie/ghaniykie.github.io.git HEAD )
+ DEBUG [65f40819] 	52a377c86cf2c78c073cfcf6d8e9a2d8b5f1d288	HEAD
+  INFO [65f40819] Finished in 2.860 seconds with exit status 0 (successful).
+  INFO [8999245e] Running /usr/bin/env mkdir -p /home/kaanoy/integrated-mockup/shared /home/kaanoy/integrated-mockup/releases as kaanoy@34.101.252.168
+ DEBUG [8999245e] Command: /usr/bin/env mkdir -p /home/kaanoy/integrated-mockup/shared /home/kaanoy/integrated-mockup/releases
+  INFO [8999245e] Finished in 0.158 seconds with exit status 0 (successful).
+ DEBUG [fee28d64] Running [ -f /home/kaanoy/integrated-mockup/current/REVISION ] as kaanoy@34.101.252.168
+ DEBUG [fee28d64] Command: [ -f /home/kaanoy/integrated-mockup/current/REVISION ]
+ DEBUG [fee28d64] Finished in 0.123 seconds with exit status 0 (successful).
+ DEBUG [09f70bc7] Running /usr/bin/env cat /home/kaanoy/integrated-mockup/current/REVISION 2>/dev/null as kaanoy@34.101.252.168
+ DEBUG [09f70bc7] Command: /usr/bin/env cat /home/kaanoy/integrated-mockup/current/REVISION 2>/dev/null
+ DEBUG [09f70bc7] 	52a377c86cf2c78c073cfcf6d8e9a2d8b5f1d288
+ DEBUG [09f70bc7] Finished in 0.145 seconds with exit status 0 (successful).
+ DEBUG [0c3744a9] Running [ -f /home/kaanoy/integrated-mockup/repo/HEAD ] as kaanoy@34.101.252.168
+ DEBUG [0c3744a9] Command: [ -f /home/kaanoy/integrated-mockup/repo/HEAD ]
+ DEBUG [0c3744a9] Finished in 0.129 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/kaanoy/integrated-mockup/repo
+ DEBUG [73f2b645] Running if test ! -d /home/kaanoy/integrated-mockup/repo; then echo "Directory does not exist '/home/kaanoy/integrated-mockup/repo'" 1>&2; false; fi as kaanoy@34.101.252.168
+ DEBUG [73f2b645] Command: if test ! -d /home/kaanoy/integrated-mockup/repo; then echo "Directory does not exist '/home/kaanoy/integrated-mockup/repo'" 1>&2; false; fi
+ DEBUG [73f2b645] Finished in 0.142 seconds with exit status 0 (successful).
+  INFO [8aff17c1] Running /usr/bin/env git remote set-url origin git@github.com:GhaniyKie/ghaniykie.github.io.git as kaanoy@34.101.252.168
+ DEBUG [8aff17c1] Command: cd /home/kaanoy/integrated-mockup/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-d5e32ff6dcfa6f41aba0.sh" ; /usr/bin/env git remote set-url origin git@github.com:GhaniyKie/ghaniykie.github.io.git )
+ DEBUG [8aff17c1] 	error: could not lock config file config: Permission denied
+ DEBUG [8aff17c1] 	fatal: could not set 'remote.origin.url' to 'git@github.com:GhaniyKie/ghaniykie.github.io.git'
