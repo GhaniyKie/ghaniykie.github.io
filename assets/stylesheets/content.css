@@ -5,8 +5,7 @@ article .container {
 }
 
 article {
-    margin-top: 4vh;
-    margin-bottom: 2vh;
+    margin: auto 0;
 }
 
 .tagline {
