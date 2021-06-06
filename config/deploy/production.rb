@@ -60,8 +60,12 @@ server "34.101.252.168", user: "kaanoy", roles: %w{app db web}
 #     # password: "please use keys"
 #   }
 
-# task :create_release_env do
-#     on "kaanoy@34.101.252.168" do
-#         execute "export RELEASE=$HOME/integrated-mockup/releases/$(ls $HOME/integrated-mockup/releases | grep '.*[0-9]')"
-#     end
-# end
+task :create_release_env do
+    on "kaanoy@34.101.252.168" do
+        # execute "export RELEASE=$HOME/integrated-mockup/releases/$(ls $HOME/integrated-mockup/releases | grep '.*[0-9]')"
+        # execute "sudo reboot"
+        execute "cp -r $HOME/integrated-mockup/releases/$(ls $HOME/integrated-mockup/releases | grep '.*[0-9]')/* $HOME/integrated-mockup/public"
+        execute "sudo systemctl restart nginx.service"
+    end
+end
+after "deploy:cleanup", "create_release_env"
