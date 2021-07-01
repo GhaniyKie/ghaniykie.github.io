@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" href="stylesheets/payment-type.css">
+    <title>Client Dashboard</title>
+</head>
+<body>
+    <header class="box">
+        <div class="container header">
+            <div class="navbar">
+                <div class="hamburger" onclick="openNav()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="sidenav" id="dash-sidenav">
+                    <nav>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="#">Histori Pembayaran</a>
+                        <a href="#">Daftar Tunggakan</a>
+                        <a href="#">Bantuan</a>
+                        <a href="#">Versi Aplikasi</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="logo">
+                <p><a href="/client_dashboard/index.html">Client Payment Console</a></p>
+            </div>
+            <div class="search">
+                <div class="search-form">
+                    <input type="search" name="" id="" placeholder="Cari data pembayaran dengan ID Invoice">
+                </div>
+                <div class="icon">
+                    <span><i class="bi bi-search"></i></span>
+                </div>
+            </div>
+            <div class="profile">
+                <p class="name">Welcome, Mega A. Tarwiyah</p>
+                <img src="images/mega.jpg" alt="" srcset="" class="avatar" onclick="openCloseElement('profile-menu')">
+            </div>
+
+            <div class="profile-menu box" id="profile-menu" style="display: none;">
+                <div class="profile-detail">
+                    <img src="images/mega.jpg" alt="" class="avatar">
+                    <div class="bio">
+                        <p class="name">Mega Apriyani Tarwiyah</p>
+                        <p class="email">mega@learnwithghaniy.web.id</p>
+                        <p class="location">6 A Putri, Senoparty</p>
+                    </div>                        
+                </div>
+                <hr>
+                <div class="settings">
+                    <a href="">Pengaturan</a>
+                    <a href="">Edit Data Pribadi</a>
+                </div>
+                <div class="logout">
+                    <form action="/" method="GET">
+                        <button class="box">Keluar</button>
+                    </form>
+                </div>
+            </div>
+    
+        </div>
+    </header>
+    <div class="container">
+        <article class="content box main-box">
+            <section class="payment-type-title">
+                <h1>Detail Pembayaran</h1>
+                <p>ID Invoice: SPP-12345678-02-21</p>
+                <p>Tanggal Transaksi: Sabtu, 28 Nov 1998</p>
+                <p>No. Referensi: <span style="font-family: 'Courier New', Courier, monospace;">e149a365ee48a579f43dcf0502e3857ae42290b0</span></p>
+            </section>
+            <section class="payment-type-nominal">
+                <h2>Jumlah Tagihan</h2>
+                <p class="nominal">Rp. 650.000</p>
+                <h3>Biaya Admin</h3>
+                <p class="admin-fee">Pilih metode pembayaran terlebih dahulu</p>
+            </section>
+            <section class="payment-type-pay-information">
+                <p class="pay-status">Status Transaksi: MENUNGGU PEMBAYARAN</p>
+                <p>Silahkan pilih metode pembayaran yang akan digunakan.</p>
+                <p>Harap transfer sesuai jumlah TOTAL BAYAR.</p>
+            </section>
+            <section class="total-payment-type">
+                <h4>Total Bayar <span>RP. 656.000</span></span></h4>
+            </section>
+        </article>
+        <article class="action">
+            <!-- <section class="buttons">
+                <button class="box download"><i class="bi bi-cloud-download"></i> Unduh</button>
+                <button class="box share"><i class="bi bi-share"></i> Bagikan</button>
+                <button class="box back">KEMBALI KE DASHBOARD</a></button>    
+            </section> -->
+            <section class="payment-type-action">
+                <div class="title">
+                    <h2>Metode Pembayaran</h2>
+                </div>
+                <div class="emoney">
+                    <div class="title">
+                        <h3>E-Money</h3>
+                        <hr>
+                    </div>
+                    <div class="wallets">
+                        <div class="gopay box ripple">
+                            <img src="/client_dashboard/images/qris.png" alt="" srcset="">
+                        </div>
+                        <div class="shopee-pay box ripple">
+                            <img src="/client_dashboard/images/Logo ShopeePay.png" alt="" srcset="">
+                        </div>
+                        <div class="qris box ripple">
+                            <img src="/client_dashboard/images/qris.png" alt="" srcset="">
+                        </div>    
+                    </div>
+                    <div class="emoney-notes">
+                        <p>QRIS Support dengan:</p>
+                        <p>JeniusPay, CIMB Mobile, OVO, Dana, Gopay, ShopeePay, LinkAja</p>
+                    </div>
+                </div>
+                <div class="bank-transfer">
+                    <div class="title">
+                        <h3>Bank Transfer</h3>
+                        <hr>
+                    </div>
+                    <div class="banks">
+                        <div class="bni box ripple">
+                            <img src="/client_dashboard/images/BNI.png" alt="" srcset="">
+                        </div>
+                        <div class="bri box ripple">
+                            <img src="/client_dashboard/images/BRI.png" alt="">
+                        </div>
+                        <div class="mandiri box ripple">
+                            <img src="/client_dashboard/images/MANDIRI.png" alt="" srcset="">
+                        </div>
+                        <div class="permata box ripple">
+                            <img src="/client_dashboard/images/PERMATA.png" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="ask-help">
+                <p>Ada ketidaksesuaian pada transaksi tersebut ?</p>
+                <p>Harap baca <a href="#">Panduan</a> atau <a href="#">Minta Bantuan</a></p>    
+            </section>
+        </article>
+        <div class="notification success box ripple" id="notification" onclick="notification()" >
+            <p>Berhasil Login</p>
+        </div>
+    </div>
+    <script src="javascripts/custom.js"></script>
+</body>
+</html>
