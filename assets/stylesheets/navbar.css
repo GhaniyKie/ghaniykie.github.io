@@ -1,33 +1,42 @@
 header {
     background-color: rgba(0, 0, 0, 0);
-    min-height: 60px
+    min-height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar button {
+    width: 70px;
+    height: 40px;
+    margin: 0;
 }
 
 .navbar {
     color: white;
-    float: right;
     text-decoration: none;
     line-height: 60px;
-    display: block;
     font-size: 17px;
+    display: flex;
+    flex-direction: row;
 }
 
-.navbar a {
+.navbar a, .navbar button {
     color: black;
-    padding-left: 20px;
+    margin: auto 10px;
 }
 
 .navbar a:hover {
     color:burlywood;
 }
 
-.logo img {
-    width: 170px;
-    padding: 11px 0 5px 0;
+.logo {
+    display: flex;
 }
 
-.logo {
-    float: left;
+.logo img {
+    margin: auto;
+    width: 170px;
 }
 
 /* MOBILE NAVBAR */
@@ -76,11 +85,7 @@ header {
     padding: 20px;
 }
 
-.hamburger-menu div {
-    width: 30px;
-    height: 4px;
-    background-color: rgb(104, 104, 104);;
-    margin: 6px 0;
+.hamburger-menu {
     display: none;
 }
 

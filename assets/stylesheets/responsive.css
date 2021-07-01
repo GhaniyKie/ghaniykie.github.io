@@ -1,11 +1,8 @@
 @media screen and (min-width: 1500px) {
     .tagline h1 {
-        font-size: 60px;
+        /* font-size: 60px; */
     }
 
-    .flex-main {
-        padding: 15% 0;
-    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -18,11 +15,15 @@
     }
 
     footer .mobile {
-        display: inherit;
+        display: flex;
     }
     
     footer p {
-        font-size: 11px;
+        font-size: 14px;
+    }
+
+    .form.register {
+        max-width: 30vw;
     }
 }
 
@@ -31,24 +32,22 @@
         height: 100%; 
     }
 
-    header .container {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    article .container {
-        display: block;
-    }
-
     .hamburger-menu {
         padding-top: 11px;
     }
 
-    .hamburger-menu div {
+    .hamburger-menu {
         display: block;
     }
 
-    .image-main img, .navbar {
+    .hamburger-menu div {
+        width: 30px;
+        height: 4px;
+        background-color: rgb(104, 104, 104);;
+        margin: 6px 0;
+    }
+
+    .image-main, .navbar {
         display: none;
     }
 
@@ -56,11 +55,12 @@
         display: flex;
     }
 
-}
+    article.home {
+        flex-direction: column;
+    }
 
-@media screen and (max-width: 450px) {
     .tagline h1 {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .tagline p {
@@ -74,4 +74,8 @@
     .tagline h3 {
         font-size: 20px;
     }
+}
+
+@media screen and (max-width: 450px) {
+    
 }
