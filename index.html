@@ -5,13 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/stylesheets/main.css">
+  <link rel="stylesheet" href="assets/stylesheets/index.css">
+
   <!-- <link rel="stylesheet" href="navbar.css"> -->
   <title>Homepage Mockup</title>
 </head>
 <body>
   <div class="background"></div>
-  <header>
-    <div class="container">
+  <div class="container">
+    <header>
       <div class="logo">
         <img src="assets/images/logo_dr.png" alt="" srcset="">
       </div>
@@ -19,28 +21,27 @@
           <a href="changelog.html">Changelog</a>
           <a href="#">Developer</a>
           <a href="#">Bantuan</a>
-          <a href="login.html" class="login">Login</a>
+          <form action="login.html">
+            <button type="submit"><span style="color: #fff; font-weight: 500; font-size: 17px;">Masuk</span></button>
+          </form>
       </nav>
       <!-- Mobile Navbar -->
       <div id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <a href="#">Changelog</a>
           <a href="#">Developer</a>
-          <a href="#">Bantuan</a>
+          <a href="404.html">Bantuan</a>
           <a href="login.html">Login</a>
-      </div>
-    
+      </div>    
       <div class="hamburger-menu" onclick="openNav()">
           <div></div>
           <div></div>
           <div></div>
       </div>
       <!-- End Mobile Navbar -->
-
-    </div>
-  </header>
-  <article>
-    <div class="container">
+  
+    </header>
+    <article class="home">
       <div class="tagline">
         <h1>Pembayaran Bulanan</h1>
         <h1><span>Kini Lebih Mudah dan Cepat</span></h1>
@@ -53,28 +54,16 @@
         <img src="assets/images/lambang_dr_jakarta.png" alt="" srcset="">
       </div>
       <form action="login.html">
-        <button class="start hidden" type="submit"><span>Mari kita mulai</span><i class="bi bi-arrow-right-short"></i></button>
+        <button class="start" type="submit"><span>Mari kita mulai</span><i class="bi bi-arrow-right-short"></i></button>
       </form>
-    </div>
-  </article>
-
-  <footer>
-    <div class="container">
-      <p class="desktop">&copy 2021 Copyright Pondok Pesantren Daarul Rahman | Made with <i class="bi bi-heart-fill" style="color: red;"></i> by Abdul Hakim Ghaniy</p>
-      <p class="mobile hidden">&copy 2021 Copyright Pondok Pesantren Daarul Rahman</p>
-    </div>
-  </footer>
-  <script>
-    /* Open the sidenav */
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "100%";
-    }
-
-    /* Close/hide the sidenav */
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-    }
-</script>
-
+    </article>
+    <footer>
+      <div>
+        <p class="desktop">&copy 2021 Copyright Pondok Pesantren Daarul Rahman | Made with <i class="bi bi-heart-fill" style="color: red;"></i> by Abdul Hakim Ghaniy</p>
+        <p class="mobile">&copy 2021 Copyright Pondok Pesantren Daarul Rahman</p>
+      </div>
+    </footer>
+  </div>
+  <script src="assets/javascripts/custom.js"></script>
 </body>
 </html>
