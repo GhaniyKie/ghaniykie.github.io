@@ -1,21 +1,11 @@
-article .container {
-    display: flex;
-    flex-direction: row;
-
-}
-
-article {
+.tagline {
+    flex-basis: 60%;
     margin: auto 0;
 }
 
-.tagline {
-    flex-basis: 60%;
-    margin: auto;
-}
-
 .tagline h1 {
-    font-size: 50px;
     margin-bottom: 5px;
+    font-size: 2rem;
 }
 
 .tagline span {
@@ -23,15 +13,14 @@ article {
 }
 
 .image-main {
-    margin: auto;
+    margin: 0 0 0 auto;
 }
 
 .image-main img {
-    width: 350px;
+    width: 25vw;
 }
 
 .tagline p {
-    font-size: 20px;
     color: rgb(104, 104, 104);
     margin-top: 5px;
     margin-bottom: 15px;
@@ -39,37 +28,22 @@ article {
 
 .tagline h2, .tagline h3 {
     margin-bottom: 5px;
-    font-family: 'Lora', sans-serif;
-
+    font-family: 'Lora', serif;
 }
 
 .tagline h2 {
-    font-size: 40px;
+    font-size: 3rem;
+    /* font-size: 40px; */
     color: rgb(0, 165, 0);
 }
 
 .tagline h3 {
-    font-size: 25px;
+    font-size: 2.5rem;
+    /* font-size: 25px; */
 }
 
 button.start {
-    border-radius: 5px;
-    border: 1px solid forestgreen;
-    height: 50px;
-    width: 165px;
-    justify-content: space-between;
-    font-size: 15px;
-    margin-top: 40px;
-    color: black;
-    transition-duration: 0.4s;
-    background-color: transparent;
-    cursor: pointer;
-    overflow: hidden;
-}
-
-button.start:hover {
-    background-color: forestgreen;
-    color: white;
+    display: none;
 }
 
 .start i {
