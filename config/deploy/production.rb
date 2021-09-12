@@ -5,7 +5,7 @@
 
 # server "example.com", user: "deploy", roles: %w{app db web}, my_property: :my_value
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
-server "34.101.252.168", user: "kaanoy", roles: %w{app db web}
+server "35.188.212.73", user: "kaanoy", roles: %w{app db web}
 
 
 
@@ -61,10 +61,10 @@ server "34.101.252.168", user: "kaanoy", roles: %w{app db web}
 #   }
 
 task :create_release_env do
-    on "kaanoy@34.101.252.168" do
-        # execute "export RELEASE=$HOME/integrated-mockup/releases/$(ls $HOME/integrated-mockup/releases | grep '.*[0-9]')"
-        # execute "sudo reboot"
-        execute "cp -r $HOME/integrated-mockup/releases/$(ls $HOME/integrated-mockup/releases | grep '.*[0-9]')/* $HOME/integrated-mockup/public"
+    on "kaanoy@35.188.212.73" do # Rubah IP setiap ganti server
+        execute "rm -rf /home/kaanoy/mockup/public"
+        execute "mkdir /home/kaanoy/mockup/public"
+        execute "cp -r /home/kaanoy/mockup/releases/$(ls /home/kaanoy/mockup/releases | grep '.*[0-9]')/* /home/kaanoy/mockup/public"
         execute "sudo systemctl restart nginx.service"
     end
 end

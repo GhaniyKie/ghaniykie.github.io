@@ -1,14 +1,14 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.16.0"
 
-set :application, "integrated-mockup"
+set :application, "mockup"
 set :repo_url, "git@github.com:GhaniyKie/ghaniykie.github.io.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, "/home/kaanoy/integrated-mockup"
+set :deploy_to, "/home/kaanoy/mockup"
 
 ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
